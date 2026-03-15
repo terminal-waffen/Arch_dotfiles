@@ -1,0 +1,122 @@
+{
+  "layer": "top",
+  "position": "bottom",
+  "height": 44,
+
+  "modules-left": [
+ 	 "custom/code",
+ 	 "custom/terminal",
+     "custom/browser",
+     "custom/files",
+     "custom/calc",
+     "custom/screenshot"
+  ],
+  
+  "modules-center": [
+	"clock"
+  ],
+     
+  "modules-right": [ 
+  "custom/volume-icon",
+  "pulseaudio/slider",
+  "custom/bt",
+  "custom/net",
+  "battery"
+  ],
+  
+"battery": {
+
+  "format": "{icon} {capacity}%",
+  "format-charging": "󰂄 {capacity}%",
+  "format-plugged": "󰂄 {capacity}%",
+  "format-icons": [
+    "󰂎",
+    "󰁺",
+    "󰁻",
+    "󰁼",
+    "󰁽",
+    "󰁾",
+    "󰁿",
+    "󰂀",
+    "󰂁",
+    "󰂂",
+    "󰁹"
+  ]
+},
+
+"custom/bt": {
+  "format": " ",
+  "tooltip": true,
+  "tooltip-format":"Bluetooth Options",
+  "on-click": "~/.config/hypr/bt-menu.sh"
+},
+  
+ "tray": {
+     "icon-size": 16,
+     "spacing": 12
+ },
+"custom/net": {
+  "format": "󰖩 ",
+  "tooltip": true,
+  "tooltip-format":"WiFi Options",
+  "on-click": "~/.config/hypr/net-menu.sh"
+},
+  "clock": {
+    "format": "{:%a, %d.%m.%Y, %H:%M}",
+    "tooltip":false
+  },
+
+"custom/terminal": {
+    "format": " ",
+    "on-click": "foot",
+    "tooltip": true,
+    "tooltip-format": "Terminal"
+},
+
+"custom/browser": {
+    "format": "󰖟 ",
+    "on-click": "firefox",
+    "tooltip": true,
+    "tooltip-format": "Browser"
+},
+
+"custom/files": {
+    "format": " ",
+    "on-click": "thunar",    
+    "tooltip": true,
+    "tooltip-format": "File Explorer"
+},
+
+"custom/code": {
+    "format": "󰨞 ",
+    "on-click": "code",
+    "tooltip": true,
+    "tooltip-format": "Visual Studio Code"
+},
+"custom/calc": {
+    "format": " ",
+    "on-click": "qalculate-gtk",
+  	"tooltip": true,
+    "tooltip-format": "Calculator" 
+},
+"custom/screenshot": {
+    "format": "󰹑 ",
+  	"tooltip": true,
+    "tooltip-format": "Screenshot",
+    "on-click": "~/.config/hypr/screenshot.sh"
+},
+
+
+"custom/volume-icon": {
+  "format": " ",
+  "tooltip": false
+},
+
+"pulseaudio/slider": {
+  "min": 0,
+  "max": 20,
+  "orientation": "horizontal"
+}
+
+
+}

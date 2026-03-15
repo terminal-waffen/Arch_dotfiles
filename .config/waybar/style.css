@@ -1,0 +1,93 @@
+* {
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+}
+
+window#waybar {
+    background: transparent;
+    color: #ffffff;
+}
+
+#clock,
+#custom-terminal,
+#custom-browser,
+#custom-files,
+#custom-code,
+#custom-calc,
+#custom-screenshot,
+#custom-volume-icon,
+#pulseaudio-slider,
+#custom-bt,
+#custom-net,
+#battery{
+    background: rgba(0, 0, 0, 0.72);
+    color: #ffffff;
+    border-radius: 999px;
+    margin: 6px 6px;
+    min-height: 32px;
+    font-size: 14px;
+    min-width: 34px;
+	box-shadow:
+    inset 0 1px rgba(255,255,255,0.8),
+    inset 0 -1px rgba(100,100,100,0.7);
+    padding: 0 12px;
+}
+
+#custom-screenshot,
+#custom-terminal,
+#custom-browser,
+#custom-files,
+#custom-code,
+#custom-calc,
+#custom-bt,
+#custom-net
+ {
+    padding-left: 6px;
+    padding-right: 0px;
+}
+
+/* Uhr links */
+#clock {
+    padding: 0 16px;
+    margin: 6px 8px 6px 4px;
+}
+
+/* rechte Icons etwas größer, aber näher an den Slider */
+#custom-volume-icon {
+    font-size: 14px;
+    min-width: 24px;
+    padding: 0 6px;
+    margin-right: 2px;
+}
+
+/* Slider näher an die Icons */
+#pulseaudio-slider {
+    padding: 0 10px 0 8px;
+    margin-left: 0;
+}
+
+
+/* Lautstärke-Slider */
+#pulseaudio-slider trough {
+    min-width: 110px;
+    min-height: 6px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.18);
+}
+
+#pulseaudio-slider highlight {
+    min-height: 6px;
+    border-radius: 999px;
+    background: #ffffff;
+}
+
+#pulseaudio-slider slider {
+    min-width: 0px;
+    min-height: 0px;
+    opacity: 0;
+    background-image: none;
+    border: none;
+    box-shadow: none;
+}
